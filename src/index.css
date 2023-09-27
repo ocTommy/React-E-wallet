@@ -1,4 +1,60 @@
-.card-container{
-    border: 2px solid black;
-    margin: 8cqb
+.card-container,
+.card-preview {
+    background-color: #e69334;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+  }
+  
+  .card-number {
+    font-size: 20px;
+  }
+  
+  .card-name {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .card-expiration {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .card-ccv {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .card-vendor {
+    font-size: 24px;
+    color: #0074cc;
+  }
+
+
+input,
+select {
+  width: 20%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+
+button{
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 14px;
+    margin: 5px 0;
 }

@@ -8,13 +8,12 @@ export default function Cards () {
         <>
         <h1>Cards</h1>
         {cards.map((card, i) =>(
-            <div className="card-container" key={i}>
-                <p>{card.cardNumber}</p>
-                <p>{card.cardName}</p>
-                <p>{card.expiration}</p>
-                <p>{card.ccv}</p>
-                <p>{card.vendor}</p>
-
+            <div className="card-container" key={i}> 
+                <div className="card-number">{card.cardNumber}</div>
+                <div className="card-name">CARDHOLDER NAME: {card.cardName}</div>
+                <div className="card-expiration">Valid Thru: {card.expiration}</div>
+                <div className="card-ccv">CCV: {card.ccv}</div>
+                <div className="card-vendor">{card.vendor}</div>
             </div>
         ))}
         <button>
