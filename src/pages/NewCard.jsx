@@ -47,9 +47,14 @@ export default function NewCards() {
             vendor,
         };
 
+        if (cards.length <4) {
+            const newCards = [...cards, newCard];
+            setCards(newCards);
+        } else {
+            console.log("max 4 cards reached")
+        }
+
         
-        const newCards = [...cards, newCard];
-        setCards(newCards);
     };
 
     return (
